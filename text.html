@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Assessment Dashboard</h1>
+            <button id="create-assessment" class="action-button">Create New Assessment</button>
+        </header>
+
+        <div class="search-filter-bar">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search assessments by title or keyword">
+            <div class="filters">
+                <label for="filter-type">Type:</label>
+                <select id="filter-type">
+                    <option value="">All Types</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="assignment">Assignment</option>
+                    <option value="survey">Survey</option>
+                </select>
+
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="date">Date</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="completion">Completion Rate</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="assessment-list" class="assessment-list">
+            <!-- Assessment items will be dynamically populated here -->
+        </div>
+
+        <div id="recent-activities" class="recent-activities">
+            <h2>Recent Activities</h2>
+            <!-- Recent activities will be dynamically populated here -->
+        </div>
+
+        <div id="analytics-summary" class="analytics-summary">
+            <h2>Assessment Analytics Summary</h2>
+            <!-- Analytics summary will be dynamically populated here -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
